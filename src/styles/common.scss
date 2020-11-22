@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap");
+
+body {
+  font-family: "Cabin", sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #24292e;
+}
+
+.home-container {
+  width: 70%;
+  margin: 0 auto;
+
+  h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+.repos-container {
+  display: flex;
+
+  .repos-list {
+    width: 80%;
+    margin-right: 40px;
+    min-width: 750px;
+  }
+
+  .filter-container {
+    h5 {
+      margin: 0;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .language {
+      margin-bottom: 10px;
+      cursor: pointer;
+      min-width: 150px;
+      padding: 5px;
+      border-radius: 4px;
+
+      &:hover,
+      &.selected {
+        background-color: #2FCC8B;
+      }
+    }
+  }
+}
+
+.repo-container {
+  box-shadow: 2px 3px 7px 1px rgba(27, 31, 35, 0.2);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 750px;
+
+  .header {
+    display: flex;
+    background-color: #fafbfc;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e1e4e8;
+    align-items: center;
+
+    .links {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        background-size: cover;
+      }
+
+      a {
+        margin-right: 2px;
+        margin-left: 2px;
+      }
+    }
+
+    .actions {
+      display: flex;
+
+      .action-icon {
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 20px;
+        margin-right: 15px;
+      }
+    }
+
+    .stars {
+      background-image: url(../assets/star.svg);
+    }
+
+    .forks {
+      background-image: url(../assets/fork.svg);
+    }
+  }
+
+  .body {
+    padding: 10px;
+
+    .description {
+      line-height: 40px;
+    }
+
+    .language {
+      margin-top: 10px;
+
+      .icon {
+        position: relative;
+        top: 1px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .label {
+        margin-left: 10px;
+      }
+    }
+  }
+}
